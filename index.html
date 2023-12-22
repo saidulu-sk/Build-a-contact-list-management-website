@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 600px;
+            /* border: 1px solid red; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(235, 238, 237);
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            height: 60px;
+            padding-top:20px ;
+        }
+        .one a{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: larger;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .one a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }   
+        .two h2{
+            margin-top: 20px;
+            margin-left: 90px;
+        }
+        .two form{
+            margin-left: 90px;
+        }
+        .two form input{
+            width: 700px;
+            height: 40px;
+        }
+        .btn1{
+            margin-left: 90px;
+            padding: 10px 10px;
+            background-color: black;
+            transition: all 0.4s;
+            border-radius: 7px;
+        }
+        .btn1 a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.4s;
+        }
+        .btn1:hover{
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+        .btn1 a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <h2>CMS</h2>
+            <div>
+            <a href="login.html">Login</a>
+            <a href="index.html">Rigister</a>
+        </div>
+        </div>
+        <div class="two">
+            <h2>CREATE YOUR ACCOUNT</h2>
+            <br><br>
+            <form action="">
+                <label for="">Your Name</label><br><br>
+                <input type="text" placeholder="Enter your name here"><br><br>
+                <label for="">Email address</label><br><br>
+                <input type="text" placeholder="mail id"><br><br>
+                <label for="">Password</label><br><br>
+                <input type="text" placeholder="Enter Password"><br><br>
+                <label for="">Confirm Password</label><br><br>
+                <input type="text" placeholder="Re-enter Password"><br><br>
+            </form>
+        </div>
+        <button class="btn1" onclick="myFunction()"><a href="login.html">RIGISTER</a></button>
+    </div>
+    <script>
+        function myFunction() {
+          alert("Your details are recorded..!");
+        }
+        </script>
+</body>
+</html>

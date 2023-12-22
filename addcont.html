@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+                *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 600px;
+            /* border: 1px solid red; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(235, 238, 237);
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            height: 60px;
+            padding-top:20px ;
+        }
+        .one a{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: larger;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .one a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }  
+        #login{
+            background-color: red;
+            border-radius: 4px;
+            transition: all 0.4s;
+        }
+        #login:hover{
+            background-color: transparent;
+            color: red;
+            border: 1px solid red;
+        }
+        .two h1{
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+        .two .btn1{
+            margin-left: 80px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            font-size: large;
+        }
+        .search input{
+            margin-left: 80px;
+            margin-top: 20px;
+            width: 700px;
+            height: 40px;
+        }
+        .search button{
+            height: 40px;
+            width: 60px;
+            background-color: rgb(0, 238, 255);
+            border: none;
+            cursor: pointer;
+        }
+        .search button:hover{
+            background-color: rgb(77, 238, 250);
+        }
+        .two p{
+            margin-left: 80px;
+        }
+        /* .two table{
+            margin-left: 80px;
+            width: 700px;
+            text-align: center;
+            
+        }
+        .two table th{
+            background-color: black;
+            color: white;
+            padding: 20px 30px;
+        }
+        .two table td{
+            background-color: rgb(97, 93, 93);
+            padding: 10px 20px;
+        } */
+
+        .three{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.767);
+            color: white;
+            width: 900px;
+            margin-left: 50px;
+            padding: 20px 30px;
+        }
+        .four{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.253);
+            color: white;
+            width: 900px;
+            margin-left: 50px;
+            padding: 20px 30px;
+            text-align: center;
+            align-items: center;
+            font-weight: 100;
+        }
+        #mail{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <h2>CMS</h2>
+            <div>
+            <a href="addcont.html">ALL CONTACTS</a>
+            <a href="createcnt.html">CREATE</a>
+            <a href="login.html" id="login">LOGOUT</a>
+        </div>       
+        </div>
+        <div class="two">
+            <h1>Your Contacts</h1><br>
+            <button class="btn1">Reload Contact</button>
+            <br>
+            <span class="search">
+            <input type="search" placeholder="serach here"><button>Search</button>
+        </span><br><br>
+        <p>Your total contacts : 1</p>
+        <br><br>
+        <!-- <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>Saidulu</td>
+                <td>Khammam</td>
+                <td>saidulu@gmail.com</td>
+                <td>+91 9848894869</td>
+            </tr>
+        </table> -->
+        </div>
+        <div class="three">
+            <p>Name</p>
+            <p>Address</p>
+            <p>Email</p>
+            <p>Phone</p>
+        </div>
+        <div class="four">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saidulu
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Saidulu</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="input1">
+                        <label for="item" style="color: black;">Address : Khammam</label>
+                        
+                        <br><br>
+                        <label for="quantity" style="color: black;">Mail : saidulu@gmail.com</label>
+                        <br><br>
+                        <label for="quantity" style="color: black;">Phone : +91 9848894969</label>
+                        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-warning">Delete</button>
+                      <button type="button" class="btn btn-secondary btn-danger" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <p>Khammam</p>
+            <p id="mail">Saidulu@gmail.com</p>
+            <p>+91 9848894869</p>
+        </div>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(235, 238, 237);
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            height: 60px;
+            padding-top:20px ;
+        }
+        .one a{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: larger;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .one a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }   
+        .two h1{
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        .two form{
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        .two input{
+            width: 700px;
+            height: 40px;
+        }
+        .btn1{
+            margin-left: 80px;
+            padding: 10px 30px;
+            background-color: black;
+            border-radius: 5px;
+            transition: all 0.5s;
+            border: none;
+            outline: none;
+        }
+        .btn1 a{
+            padding: 10px 30px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+            
+            
+        }
+        .btn1 a:hover{
+            color: black;
+        }
+        .two p{
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <h2>CMS</h2>
+            <div>
+            <a href="login.html">Login</a>
+            <a href="index.html">Rigister</a>
+        </div>       
+        </div> 
+        <div class="two">
+            <h1>LOGIN</h1>
+            <form action="">
+                <label for="mail">Email adress</label><br><br>
+                <input type="text" placeholder="abc@gmail.com" required><br><br>
+                <label for="mail">Password</label><br><br>
+                <input type="password" placeholder="Password" required><br><br>
+            </form>
+            <button class="btn1"><a href="addcont.html">LOGIN</a></button><br><br>
+            <p>Don't have an account ? <a href="createcnt.html">Create one</a></p>
+        </div>    
+
+</body>
+</html>
